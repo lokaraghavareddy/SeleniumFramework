@@ -1,0 +1,6 @@
+dataProvider\ConfigDataProvider.class
+base\BaseClass.class
+dataProvider\ExcelDataProvider.class
+factory\DataProviderfactory.class
+pageObjects\HomePagePO.class
+base\ExtentReporterNG.class

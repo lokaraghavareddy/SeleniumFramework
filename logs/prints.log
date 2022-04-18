@@ -1,0 +1,4 @@
+14:59:08.940 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcellrefe4e0type
+14:59:08.958 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcols627ctype
+14:59:08.966 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle ctcola95ftype
+14:59:16.620 [main] INFO  testcases.SampleTest2 - navigated to sign
