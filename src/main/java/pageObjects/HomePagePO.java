@@ -6,7 +6,7 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePagePO {
-	WebDriver driver;
+	public WebDriver driver;
 
 	public HomePagePO(WebDriver driver) {
 		this.driver = driver;
@@ -14,7 +14,7 @@ public class HomePagePO {
 
 	}
 
-	@FindBy(xpath = "//a[@class='item_1 ytvlo_one']") @CacheLookup
+	private @FindBy(xpath = "//a[@class='item_1 ytvlo_one']") @CacheLookup
 	WebElement signInToYourTvLicensing;
 	
 	public void clickOnSignInToYourTvLicensing(){

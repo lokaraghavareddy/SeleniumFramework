@@ -20,7 +20,7 @@ public class ListenersItest extends BaseClass implements ITestListener{
 	ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
 
 	public void onTestStart(ITestResult result) {
-		test =extent.createTest(result.getMethod().getMethodName());
+		test =extent.createTest(result.getMethod().getMethodName()+System.getProperty("browser"));
 		extentTest.set(test);
 		
 		
@@ -36,7 +36,7 @@ public class ListenersItest extends BaseClass implements ITestListener{
 		WebDriver driver1 = null;
 		try {
 			driver1 = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
-			getScreenshot(result.getMethod().getMethodName(), driver1);
+			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

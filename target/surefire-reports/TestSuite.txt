@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.08 s <<< FAILURE! - in TestSuite
-testcases.SampleTest.sampe  Time elapsed: 12.794 s  <<< FAILURE!
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 56.034 s <<< FAILURE! - in TestSuite
+testcases.SampleTest.sampe  Time elapsed: 17.079 s  <<< FAILURE!
 java.lang.AssertionError: expected [LOka] but found [https://www.tvlicensing.co.uk/cs/update/your-licence/index.app?authorizationFilterPageName=authorization-view&WT.ac=home_ytvlo_signin]
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.failNotEquals(Assert.java:1413)

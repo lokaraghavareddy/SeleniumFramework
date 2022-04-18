@@ -18,11 +18,12 @@ public class BaseClass {
 	
 	public WebDriver initializeDriver() {
 		
-		if(DataProviderfactory.getConfig().getBrowser().equalsIgnoreCase("chrome")) {
+		String browser = System.getProperty("browser");
+		if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		else if(DataProviderfactory.getConfig().getBrowser().equalsIgnoreCase("firefox")){
+		else if(browser.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
@@ -32,6 +33,21 @@ public class BaseClass {
 			
 			
 		}
+		
+//		if(DataProviderfactory.getConfig().getBrowser().equalsIgnoreCase("chrome")) {
+//			System.setProperty("webdriver.chrome.driver", "Drivers/chromedriver.exe");
+//			driver = new ChromeDriver();
+//		}
+//		else if(DataProviderfactory.getConfig().getBrowser().equalsIgnoreCase("firefox")){
+//			System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver.exe");
+//			driver = new FirefoxDriver();
+//		}
+//		else {
+//			System.setProperty("webdriver.gecko.driver", "Drivers/geckodriver.exe");
+//			driver = new FirefoxDriver();
+//			
+//			
+//		}
 		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
